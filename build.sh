@@ -16,7 +16,7 @@ export _KUBERNETES_VERSION=1.25.0
 
 IMAGE=gcr.io/kubebuilder/thirdparty-${_GOOS}-${_GOARCH}:${_KUBERNETES_VERSION}
 TAR_NAME=kubebuilder_${_GOOS}_${_GOARCH}.tar.gz
-RELEASE_TAR_NAME=kubebuilder_v${_KUBERNETES_VERSION}_${_GOOS}_${_GOARCH}.tar.gz
+RELEASE_TAR_NAME=kubebuilder-tools-${_KUBERNETES_VERSION}_${_GOOS}_${_GOARCH}.tar.gz
 
 docker build --build-arg OS=${_GOOS} \
   --build-arg ARCH=${_GOARCH} \
